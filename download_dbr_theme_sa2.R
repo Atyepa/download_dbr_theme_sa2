@@ -173,5 +173,27 @@ fam_comm_csv <- download_dbr_theme_sa2(
   verbose   = TRUE
 )
 
+# 3) Persons born overseas (SA2, Nov 2025) — DBR (Digital Atlas item)
+# Ref: https://www.arcgis.com/home/item.html?id=0fa3c3b2c9924d3dae6acedaa35c76c4
+born_overseas_csv <- download_dbr_theme_sa2(
+  item_id   = "0fa3c3b2c9924d3dae6acedaa35c76c4",
+  layer     = 1,
+  file_stub = "dbr_persons_born_overseas_2025",
+  page_size = 1000,
+  verbose   = TRUE
+)
+
+# 4) Education & Employment (SA2, Nov 2024) — DBR (Digital Atlas item)
+# Ref: https://www.arcgis.com/home/item.html?id=1e7b885722924025a3f15c519dc9233c
+edu_empl_csv <- download_dbr_theme_sa2(
+  item_id   = "1e7b885722924025a3f15c519dc9233c",
+  layer     = 1,
+  file_stub = "dbr_education_employment_2024",
+  page_size = 1000,
+  verbose   = TRUE
+)
+
 pop_people_csv
 fam_comm_csv
+born_overseas_csv
+edu_empl_csv
